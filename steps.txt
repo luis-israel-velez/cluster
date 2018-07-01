@@ -1,0 +1,4 @@
+1. Enable ssh on all 4 raspberry 
+2. Download fab/fabric (multiple commands) 
+3. Update/upgrade the OS and distribution packages
+4. ???
