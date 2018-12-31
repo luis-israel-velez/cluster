@@ -17,8 +17,12 @@ if [ ${opt} -eq 1 ]; then
 elif [ ${opt} -eq 2 ]; then
   echo "Shutdown"
   cmd="sudo shutdown -h now"
-else
-  echo "Ups this is not right, don't understand that option"
+elif [ ${opt} -eq 3 ]; then
+  echo "Reboot"
+  cmd="sudo shutdown -r now"
+elif [ ${opt} -eq 4 ]; then
+  echo "Network Default Gateway"
+  cmd="sudo route add default gw 192.168.1.1"
 fi
 
 for i in `seq 1 4`;
