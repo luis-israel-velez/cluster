@@ -1,4 +1,4 @@
-﻿param(
+param(
  [string]
  $gatewayKey
 )
@@ -178,4 +178,3 @@ Download-Gateway $uri $gwPath
 Install-Gateway $gwPath
 
 Register-Gateway $gatewayKey
-
